@@ -14,21 +14,23 @@ class CatagoryScreen extends StatelessWidget {
         title: "Catagories".text.white.fontFamily(bold).make(),
         backgroundColor: Colors.transparent,
       ),
-      body: GridView.builder(
-          scrollDirection: Axis.horizontal,
-          shrinkWrap: true,
-          itemCount: 9,
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              crossAxisSpacing: 8,
-              mainAxisSpacing: 8,
-              mainAxisExtent: 100),
-          itemBuilder: (context, index) {
-            return Column(
-              children: List.generate(
-                  6, (index) => Container().box.color(redColor).make()),
-            ).box.white.roundedSM.size(200, 200).clip(Clip.antiAlias).make();
-          }).paddingAll(12),
+      body: Container(
+        height: 300,
+        child: GridView.builder(
+            shrinkWrap: false,
+            itemCount: 9,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                crossAxisSpacing: 12,
+                childAspectRatio: 1,
+                mainAxisSpacing: 12),
+            itemBuilder: (context, index) {
+              return Column(
+                children: List.generate(
+                    6, (index) => Container().box.color(darkFontGrey).make()),
+              ).box.white.roundedSM.size(200, 200).clip(Clip.antiAlias).make();
+            }),
+      ),
     ));
   }
 }
