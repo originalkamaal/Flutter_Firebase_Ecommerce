@@ -1,6 +1,6 @@
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:myfirst_app/consts/consts.dart';
-import 'package:myfirst_app/views/splash_screen_view/splash_screen.dart';
+import 'package:myfirst_app/views/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());

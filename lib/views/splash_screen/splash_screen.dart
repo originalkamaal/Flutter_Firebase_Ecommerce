@@ -1,8 +1,7 @@
 import 'package:get/get.dart';
 import 'package:myfirst_app/consts/consts.dart';
 import 'package:myfirst_app/widgets/common/applogo_widget.dart';
-
-import '../login_screen_view/login_screen.dart';
+import '../auth_screen/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -21,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   void initState() {
-    //changeScreen();
+    changeScreen();
     super.initState();
   }
 
